@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="uk-child-width-1-6@m uk-light" uk-grid>
+        <div>
+            <div class="uk-cover-container uk-section uk-flex uk-flex-center uk-flex-middle uk-text-center" uk-height-viewport="offset-top: true; offset-bottom: true" style="box-sizing: border-box; min-height: calc(100vh - 127px); height: calc(100vh - 127px);">
+                <img src="../assets/img/gradient-blur.jpg" alt="" uk-cover>  
+              <div class="uk-position-cover">
+                    <h2 class="title">{{ title }}</h2>
+                    <div>
+                    <router-outlet></router-outlet>
+                  </div>
+                </div>
+            </div>
+
+            <div class="uk-padding uk-background-secondary">
+                <a class="uk-button uk-button-secondary " routerLink="">Home</a>
+                <a class="uk-button uk-button-secondary" routerLink="about">Get Motivated</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--
+  not needed to nested our home page when using the <router> module
+    <app-home></app-home>
+    -->
+ 
+
+
+

@@ -1,0 +1,18 @@
+
+
+<!--(share data) display our quotes on the "about" template -->
+<!--
+<ul>
+  <li *ngFor="let quote of quotes">
+    {{ quote }}
+  </li>
+</ul>-->
+<div class="uk-container">
+  <div class="uk-child-width-1-2@s" uk-grid>
+    <div *ngFor="let quote of quotes">
+      <div class="uk-card uk-card-default uk-card-body uk-box-shadow-hover-large">
+        <span>"</span>{{ quote }}<span>"</span>
+      </div>
+    </div>
+  </div>
+</div>
